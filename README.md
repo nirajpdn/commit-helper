@@ -94,6 +94,15 @@ The `claude-cli` provider (default) calls `claude -p` under the hood — no API 
 
 Messages follow Conventional Commits: `<type>(<scope>): <subject>`
 
-Types: `feat`, `fix`, `chore`, `refactor`, `docs`, `test`, `style`, `perf`
+| Type | Meaning |
+|------|---------|
+| `feat` | A new feature |
+| `fix` | A bug fix |
+| `chore` | Maintenance tasks (deps, build config) with no behavior change |
+| `refactor` | Code restructuring with no behavior change and no bug fix |
+| `docs` | Documentation only |
+| `test` | Adding or updating tests |
+| `style` | Formatting or whitespace — no logic change |
+| `perf` | Performance improvement |
 
 Subject is ≤72 characters, imperative mood. A short bullet-point body is included when the change is complex.
